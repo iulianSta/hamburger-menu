@@ -16,6 +16,7 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
 }
+/* First menu */
 /* X-menu style */
 .x-menu {
   width: 5rem;
@@ -32,7 +33,7 @@ body {
 .x-menu div {
   width: 5rem;
   height: 0.7rem;
-  background-color: black;
+  background-color: blue;
   border-radius: 25%;
   transition: 0.5s;
 }
@@ -49,4 +50,77 @@ body {
 /* Bottom line style */
 .x-menu:hover .bottom {
   transform: rotate(-0.15turn);
+}
+/* Second menu */
+/* Sword menu */
+.sword-menu {
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+}
+.sword-menu div {
+  width: 5rem;
+  height: 0.7rem;
+  background-color: yellow;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+/* Change shape by Hover */
+/* Top line style */
+.sword-menu:hover .s-top {
+  transform: rotate(-0.15turn);
+}
+/* Middle line style */
+.sword-menu:hover .s-middle {
+  display: none;
+}
+/* Bottom line style */
+.sword-menu:hover .s-bottom {
+  transform: rotate(0.15turn);
+}
+/* Sword menu rotate */
+.sword-menu:hover {
+  transform: rotate(-0.25turn);
+}
+/* Third menu */
+/* A menu */
+.a-menu {
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+}
+.a-menu div {
+  width: 5rem;
+  height: 0.7rem;
+  background-color: red;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+/* Change shape by Hover */
+/* Top line style */
+.a-menu:hover .a-top {
+  transform: rotate(-0.06turn);
+}
+/* Middle line style */
+.a-menu:hover .a-middle {
+  width: 4rem;
+  transform: rotate(0.25turn);
+}
+/* Bottom line style */
+.a-menu:hover .a-bottom {
+  transform: rotate(0.06turn);
+}
+/* Sword menu rotate */
+.a-menu:hover {
+  transform: rotate(0.25turn);
 }
