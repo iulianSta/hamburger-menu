@@ -1,0 +1,52 @@
+/* All elements style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Root style */
+:root {
+  font-size: 16px;
+}
+/* Body style */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+/* X-menu style */
+.x-menu {
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 5rem;
+  left: 2rem;
+}
+/* Menu lines style */
+.x-menu div {
+  width: 5rem;
+  height: 0.7rem;
+  background-color: black;
+  border-radius: 25%;
+  transition: 0.5s;
+}
+/* Change shape by Hover */
+/* Top line style */
+.x-menu:hover .top {
+  transform: rotate(0.15turn);
+  position: absolute;
+}
+/* Middle line style */
+.x-menu:hover .middle {
+  display: none;
+}
+/* Bottom line style */
+.x-menu:hover .bottom {
+  transform: rotate(-0.15turn);
+}
